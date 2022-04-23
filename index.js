@@ -23,4 +23,6 @@ app.listen(port, ()=> {
 
 app.get('/all', db.getAll);
 app.get('/something',db.getSomething);
+app.get('/gdp-unemployment', db.getGdpUnemployment);
+app.get('/custom/:table1/:table2/:attribute1/:attribute2', db.getCustom);
 
